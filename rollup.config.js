@@ -1,7 +1,10 @@
-import babel from 'rollup-plugin-babel';
-import resolve from 'rollup-plugin-node-resolve';
+// import babel from 'rollup-plugin-babel';
+// import resolve from 'rollup-plugin-node-resolve';
 
-export default {
+const babel = require('rollup-plugin-babel');
+const resolve = require('rollup-plugin-node-resolve');
+
+module.exports = {
   input: 'src/index.js',
   output: [
     {
